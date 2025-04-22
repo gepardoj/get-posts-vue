@@ -9,7 +9,20 @@ getData().then(res => posts.value = res.posts);
 </script>
 
 <template>
-  <section class="row row-cols-4 py-5">
+  <div class="input-group mt-3 w-50">
+    <div class="input-group-prepend">
+      <button class="btn btn-outline-secondary" type="button" id="search-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 30 30">
+          <path
+            d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <input type="text" class="form-control" placeholder="Filter by author..." aria-label="filter by author"
+      aria-describedby="basic-addon1">
+  </div>
+  <section class="row row-cols-md-3 py-5">
     <Post v-for="post in posts" :key="post.id" :post="post" />
   </section>
 </template>
