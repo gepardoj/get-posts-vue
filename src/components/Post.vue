@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { IPost } from '../stores/posts';
-defineProps<{ post: IPost }>()
+import type { IPostWithAuthor } from '../stores/posts';
+defineProps<{ post: IPostWithAuthor }>()
 </script>
 
 <template>
@@ -14,5 +14,3 @@ defineProps<{ post: IPost }>()
     </div>
   </article>
 </template>
-
-<style scoped></style>
