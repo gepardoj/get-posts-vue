@@ -1,6 +1,5 @@
 import { createApp } from 'vue'
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "./assets/scss/main.scss"
 import App from './App.vue'
 import { createPinia } from 'pinia'
 import { VueQueryPlugin } from '@tanstack/vue-query'

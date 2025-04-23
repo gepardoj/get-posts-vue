@@ -7,7 +7,7 @@ const store = usePostsStore();
 </script>
 
 <template>
-  <div class="input-group mt-3 w-50">
+  <div class="input-group mt-3 w-50 search-container">
     <div class="input-group-prepend">
       <button @click="store.setSearchStr(str)" class="btn btn-outline-secondary" type="button" id="search-btn"
         aria-label="Search">
