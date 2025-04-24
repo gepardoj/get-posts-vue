@@ -1,5 +1,38 @@
-# Vue 3 + TypeScript + Vite
+# Posts Retrieval App
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[![Live Demo](https://img.shields.io/badge/demo-live-green.svg)](https://gepardoj.github.io/get-posts-vue/)  
+*A Vue 3 application demonstrating modern frontend techniques*
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+A demo application built with:
+- [Vue 3](https://v3.vuejs.org/) (Composition API)  
+- [Pinia](https://pinia.vuejs.org/) (State management)  
+- [Vue Query (@tanstack/vue-query v5+)](https://tanstack.com/query/latest/docs/vue/overview) (Data fetching/caching)  
+- [axios](https://axios-http.com/) (HTTP client)  
+- [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) (CSS framework, jQuery-free)  
+- [Sass](https://sass-lang.com/) (CSS preprocessor)  
+
+## Features  
+- Efficient client-side caching with Vue Query  
+- Centralized state via Pinia stores  
+- Mobile-first responsive design  
+- Sass-powered styling with variables and mixins
+- Lightweight bundle (no jQuery/Popper.js, picked up not neccessary Bootstrap styles)
+
+## Development  
+
+### Prerequisites  
+- [Node.js](https://nodejs.org/) (v18+)  
+- [pnpm](https://pnpm.io/) (v10.x)  
+
+### Installation & Running  
+1. Install **pnpm** globally:  
+   ```sh
+   npm install -g pnpm@latest-10
+
+2. Install dependencies:
+    ```sh
+    pnpm i
+
+3. Start the dev server:
+    ```sh
+    pnpm run dev
